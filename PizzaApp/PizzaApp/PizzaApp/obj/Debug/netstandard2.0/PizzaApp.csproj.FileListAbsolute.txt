@@ -1,0 +1,17 @@
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\bin\Debug\netstandard2.0\PizzaApp.deps.json
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\bin\Debug\netstandard2.0\PizzaApp.dll
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\bin\Debug\netstandard2.0\ref\PizzaApp.dll
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\bin\Debug\netstandard2.0\PizzaApp.pdb
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\PizzaApp.csproj.AssemblyReference.cache
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\View\FoodListView.xaml.g.cs
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\View\FoodView.xaml.g.cs
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\View\HomeView.xaml.g.cs
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\View\OrderView.xaml.g.cs
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\PizzaApp.AssemblyInfoInputs.cache
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\PizzaApp.AssemblyInfo.cs
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\PizzaApp.csproj.CoreCompileInputs.cache
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\XamlC.stamp
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\PizzaApp.dll
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\ref\PizzaApp.dll
+D:\prog2\PizzaApp\PizzaApp\PizzaApp\obj\Debug\netstandard2.0\PizzaApp.pdb
