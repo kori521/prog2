@@ -4,15 +4,20 @@
              x:Class="PizzaApp.View.HomeView">
     <ContentPage.Content>
         <StackLayout>
-            <Grid>
+            <Label Text="Pizza App" HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center" Margin="10"/>
+            <Grid Margin="10,30,10,10">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="200"/>
                     <RowDefinition Height="100"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Text="Pizzas" Command="{Binding FLWcommand}" Grid.Row="0"/>
-                <Button Text="Orders" Command="{Binding OrderCommand}" Grid.Row="1"/>
+                <Button Text="Pizzas" Command="{Binding PizzaCommand}" Grid.Row="0" Grid.Column="0" ImageSource=""/>
+                <Button Text="Cart" Grid.Row="0" Grid.Column="1" Margin="1,1,1,80" Command="{Binding CartCommand}"/>
+                <Button Text="Coupons" Grid.Row="1" Grid.Column="0" Margin="1,-10,1,-50" Command="{Binding CouponsCommand}"/>
+                <Button Text="Orders" Command="{Binding OrdersCommand}" Grid.Row="1" Grid.Column="1" Margin="1,-90,1,-50"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
