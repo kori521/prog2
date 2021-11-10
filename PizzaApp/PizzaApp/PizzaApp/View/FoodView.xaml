@@ -2,11 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PizzaApp.View.FoodView">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!--HEADER BACKGROUND -->
+            <Frame Grid.Row="0" Grid.ColumnSpan="2" HeightRequest="200">
+                <Image Source=""/>
+            </Frame>
+           <Label Text="{Binding FoodList.name}" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" TextColor="Black"
+                               HorizontalTextAlignment="Center" Margin="50,20,50,0" FontSize="20" FontAttributes="Bold" VerticalOptions="Start"/>
+            <Label Text="{Binding FoodList.price, StringFormat='{0} Ft'}" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2" TextColor="Red"
+                               HorizontalTextAlignment="Center" Margin="50,20,50,0" FontSize="20" FontAttributes="Bold" VerticalOptions="Start"/>
+            <Label Text="{Binding FoodList.description}" Grid.Row="3" Grid.RowSpan="2" Grid.ColumnSpan="2"
+                               HorizontalTextAlignment="Center" Margin="50,20,50,0" FontSize="20" FontAttributes="Bold"/>
+
+            <Button Text="Kosárba" Command="{Binding CartCommand}" HeightRequest="60" BackgroundColor="#0090C6" Grid.Row="4"
+                    FontAttributes="Bold" FontSize="17" TextColor="white" HorizontalOptions="Center" Margin="5"/>
+            <Button Text="Rendelés" Command="{Binding OrderCommand}" HeightRequest="60" BackgroundColor="Red" Grid.Row="4" Grid.Column="1"
+                    FontAttributes="Bold" FontSize="17" TextColor="white" HorizontalOptions="Center" Margin="5"/>
+        </Grid>
+    </StackLayout>
 </ContentPage>

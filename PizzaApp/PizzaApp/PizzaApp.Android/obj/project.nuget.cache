@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "332wr+vJRyATz0eq0Qk9ENt5sZa2MU7HnJoLSdXW6aBeKFT3hHSe7sYLdv/sNf5TVfoiQ3paJFr48Zp2r3e7eA==",
+  "dgSpecHash": "+c4jf/rA3FAS/7l2GyS6CXx6ytkYgXAcDtjOtPBbahkmty99c+XT1treGyFaCuDFuFwnX47fBe7BceVXcORw3Q==",
   "success": true,
   "projectFilePath": "D:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp.Android\\PizzaApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\korne\\.nuget\\packages\\devexpress.xamarinforms.collectionview\\21.2.3\\devexpress.xamarinforms.collectionview.21.2.3.nupkg.sha512",
+    "C:\\Users\\korne\\.nuget\\packages\\devexpress.xamarinforms.core\\21.2.3\\devexpress.xamarinforms.core.21.2.3.nupkg.sha512",
     "C:\\Users\\korne\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\korne\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\korne\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
@@ -62,7 +64,10 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.android.material\\1.2.1.1\\xamarin.google.android.material.1.2.1.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\korne\\.nuget\\packages\\xamarin.jetbrains.annotations\\13.0.0.3\\xamarin.jetbrains.annotations.13.0.0.3.nupkg.sha512",
+    "C:\\Users\\korne\\.nuget\\packages\\xamarin.kotlin.stdlib\\1.4.20\\xamarin.kotlin.stdlib.1.4.20.nupkg.sha512",
+    "C:\\Users\\korne\\.nuget\\packages\\xamarin.kotlin.stdlib.common\\1.4.20\\xamarin.kotlin.stdlib.common.1.4.20.nupkg.sha512"
   ],
   "logs": []
 }

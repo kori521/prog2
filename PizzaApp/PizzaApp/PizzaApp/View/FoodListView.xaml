@@ -1,12 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dxcv="http://schemas.devexpress.com/xamarin/2014/forms/collectionview"
              x:Class="PizzaApp.View.FoodListView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Refresh" IconImageSource="" Command="{Binding Refresh}" />
+        
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout>
+            <dxcv:DXCollectionView ItemsSource="{Binding FoodTable}" SelectionMode="Single"
+                            SelectedItem="{Binding SelectedProduct, Mode=OneWayToSource}" Grid.Row="3" x:Name="Collection" 
+                            IndicatorColor="{AppThemeBinding Dark=#353535, Light=Azure}">
+                <dxcv:DXCollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="7,1,7,1" Padding="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="85"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <BoxView Color="#0090C6" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="3" CornerRadius="8" />
+                            <BoxView Color="#FAFEFE" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="3"
+                                         Margin="3" CornerRadius="8"/>
+                            <ImageButton Grid.Row="0" Grid.Column="0" Grid.RowSpan="4"  WidthRequest="85" HeightRequest="85"
+                                       HorizontalOptions="Start" VerticalOptions="Center" Aspect="AspectFit" Source="{Binding thumb}"
+                                       x:Name="thumb" Margin="3,3,3,3" BackgroundColor="White" />
+                            <Label Text="{Binding name}" Grid.Column="1" Grid.RowSpan="2" Padding="2,2,0,0" Grid.ColumnSpan="2"
+                                       TextColor="Black" MaxLines="2" FontAttributes="Bold" FontSize="22"
+                                       FontFamily="Aller" HorizontalTextAlignment="Center" HorizontalOptions="StartAndExpand"/>
+                            <Label Text="{Binding description}" Padding="0,-2,0,0" TextColor="Black"
+                                       Grid.Column="2" Grid.Row="2" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="{Binding price, StringFormat='{0} Ft'}" Padding="0,-4,0,0" TextColor="Red" FontSize="16"
+                                       Grid.Column="1" Grid.Row="3" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+                        </Grid>
+                    </DataTemplate>
+                </dxcv:DXCollectionView.ItemTemplate>
+                <dxcv:DXCollectionView.SortDescriptions>
+                    <dxcv:SortDescription FieldName="megnev" SortOrder="{Binding Sort}"/>
+                </dxcv:DXCollectionView.SortDescriptions>
+            </dxcv:DXCollectionView>
+            <Button Margin="5,5,5,5" WidthRequest="55" HeightRequest="55" Text="↑" FontSize="35"
+                    FontAttributes="Bold"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds=".96,.96,80,80" 
+                    BackgroundColor="#888888"
+                    CornerRadius="100"
+                    x:Name="Totop" IsVisible="true" Clicked="Totop_Clicked"/>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

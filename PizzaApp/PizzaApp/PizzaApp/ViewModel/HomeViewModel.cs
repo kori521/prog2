@@ -1,7 +1,9 @@
 ﻿using PizzaApp.Data;
+using PizzaApp.Model;
 using PizzaApp.View;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -10,9 +12,11 @@ namespace PizzaApp.ViewModel
 {
     public class HomeViewModel : ViewModelBase
     {
+        private ObservableCollection<Foods> food;
         public HomeViewModel(SQLiteRepository sqliteRepository)
         {
             sqliteRepository.Initialize();
+            sqliteRepository.LoadTable();
             InitPizzaCommand();
             InitCartCommand();
             InitCouponsCommand();
@@ -20,13 +24,14 @@ namespace PizzaApp.ViewModel
         }
         private void InitPizzaCommand()
         {
-            PizzaCommand = new Command(async () => NavigateToPizzaView());
+            PizzaCommand = new Command(async () => NavigateToPizzaView(new Foods()));
         }
-        public async void NavigateToPizzaView()
+        public async void NavigateToPizzaView(Foods value)
         {
-            var foodView = Locator.Resolve<FoodView>();
-            var foodViewModel = foodView.BindingContext as FoodViewModel;
-            await Navigation.PushAsync(foodView);
+            var foodListView = Locator.Resolve<FoodListView>();
+            var foodListViewModel = foodListView.BindingContext as FoodListViewModel;
+            foodListViewModel.foods = value;
+            await Navigation.PushAsync(foodListView);
         }
         private void InitCartCommand()
         {
@@ -57,6 +62,16 @@ namespace PizzaApp.ViewModel
             var couponsView = Locator.Resolve<CouponsView>();
             var couponsViewModel = couponsView.BindingContext as CouponsViewModel;
             await Navigation.PushAsync(couponsView);
+        }
+
+        public ObservableCollection<Foods> FoodTable
+        {
+            get => food;
+            set
+            {
+                food = value;
+                OnPropertyChanged();
+            }
         }
         public ICommand PizzaCommand { get; set; }
         public ICommand CartCommand { get; set; }

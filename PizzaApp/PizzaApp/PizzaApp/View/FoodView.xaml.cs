@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PizzaApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,11 @@ namespace PizzaApp.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FoodView : ContentPage
     {
-        public FoodView()
+        public FoodView(FoodViewModel foodViewModel)
         {
             InitializeComponent();
+            foodViewModel.Navigation = Navigation;
+            BindingContext = foodViewModel;
         }
     }
 }

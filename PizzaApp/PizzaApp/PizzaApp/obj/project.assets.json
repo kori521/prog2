@@ -2,6 +2,31 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "DevExpress.XamarinForms.CollectionView/21.2.3": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[21.2.3]",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.CollectionView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.CollectionView.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Core/21.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -259,6 +284,43 @@
     }
   },
   "libraries": {
+    "DevExpress.XamarinForms.CollectionView/21.2.3": {
+      "sha512": "INbPoSGYZJ4wR4me3KKU1lCLwXZzvKlUxkx//x9QxDCegeybGLfFJG67InMNzHPSePdkeRtAd0TCPo3E8O1vqg==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.collectionview/21.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.collectionview.21.2.3.nupkg.sha512",
+        "devexpress.xamarinforms.collectionview.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.CollectionView.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.CollectionView.iOS.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.CollectionView.dll"
+      ]
+    },
+    "DevExpress.XamarinForms.Core/21.2.3": {
+      "sha512": "Fp7M/TcDRVl9aEiB/bzi+FvokMKJ4cWq9xk/Ug5SKiXw628wMi4b7b0EK02fIlO1U86KKueP8liyjqxkilp/+Q==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.core/21.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.core.21.2.3.nupkg.sha512",
+        "devexpress.xamarinforms.core.nuspec",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.xml",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.xml",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.xml"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
       "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
       "type": "package",
@@ -987,6 +1049,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "DevExpress.XamarinForms.CollectionView >= 21.2.3",
       "Microsoft.Extensions.DependencyInjection >= 5.0.2",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
       "NETStandard.Library >= 2.0.3",
@@ -1047,6 +1110,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "DevExpress.XamarinForms.CollectionView": {
+            "target": "Package",
+            "version": "[21.2.3, )"
+          },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[5.0.2, )"

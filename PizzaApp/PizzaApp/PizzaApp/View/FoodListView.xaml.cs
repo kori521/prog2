@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PizzaApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,16 @@ namespace PizzaApp.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FoodListView : ContentPage
     {
-        public FoodListView()
+        public FoodListView(FoodListViewModel foodListViewModel)
         {
             InitializeComponent();
+            foodListViewModel.Navigation = Navigation;
+            BindingContext = foodListViewModel;
+        }
+
+        private void Totop_Clicked(object sender, EventArgs e)
+        {
+            Collection.ScrollTo(0);
         }
     }
 }

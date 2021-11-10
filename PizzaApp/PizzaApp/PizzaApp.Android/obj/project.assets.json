@@ -2,6 +2,38 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v11.0": {
+      "DevExpress.XamarinForms.CollectionView/21.2.3": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[21.2.3]",
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Kotlin.StdLib": "1.4.20"
+        },
+        "compile": {
+          "lib/MonoAndroid10/DevExpress.Xamarin.Android.CollectionView.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/DevExpress.Xamarin.Android.CollectionView.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Core/21.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Core.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Core.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Core.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Core.dll": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/5.0.2": {
         "type": "package",
         "dependencies": {
@@ -1085,10 +1117,60 @@
           "buildTransitive/monoandroid50/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
+      "Xamarin.Jetbrains.Annotations/13.0.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "build": {
+          "build/monoandroid10.0/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.4.20": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "13.0.0.3",
+          "Xamarin.Kotlin.StdLib.Common": "1.4.20"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "build": {
+          "build/monoandroid10.0/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.4.20": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "build": {
+          "build/monoandroid10.0/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
       "PizzaApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "DevExpress.XamarinForms.CollectionView": "21.2.3",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "Xamarin.Essentials": "1.6.1",
@@ -1105,6 +1187,43 @@
     }
   },
   "libraries": {
+    "DevExpress.XamarinForms.CollectionView/21.2.3": {
+      "sha512": "INbPoSGYZJ4wR4me3KKU1lCLwXZzvKlUxkx//x9QxDCegeybGLfFJG67InMNzHPSePdkeRtAd0TCPo3E8O1vqg==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.collectionview/21.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.collectionview.21.2.3.nupkg.sha512",
+        "devexpress.xamarinforms.collectionview.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.CollectionView.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.CollectionView.iOS.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.CollectionView.dll"
+      ]
+    },
+    "DevExpress.XamarinForms.Core/21.2.3": {
+      "sha512": "Fp7M/TcDRVl9aEiB/bzi+FvokMKJ4cWq9xk/Ug5SKiXw628wMi4b7b0EK02fIlO1U86KKueP8liyjqxkilp/+Q==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.core/21.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.core.21.2.3.nupkg.sha512",
+        "devexpress.xamarinforms.core.nuspec",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.xml",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.xml",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.xml"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection/5.0.2": {
       "sha512": "xzFW00AZEvOXM1OX+0+AYH5op/Hf3u//e6wszBd/rK72sypD+jx5CtsHxM4BVuFBEs8SajfO4QzSJtrQaHDr4A==",
       "type": "package",
@@ -2430,6 +2549,51 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
+    "Xamarin.Jetbrains.Annotations/13.0.0.3": {
+      "sha512": "YBQJ/J9ClC+7upizNaZH4qjGgM5LsNdygV4MqPMDUopHBulsyv2VPDUHar1xxIvgEzOuGoSjsaENosZWS+lKXA==",
+      "type": "package",
+      "path": "xamarin.jetbrains.annotations/13.0.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid10.0/Xamarin.Jetbrains.Annotations.targets",
+        "jar/org.jetbrains.annotations.jar",
+        "lib/monoandroid10.0/Xamarin.Jetbrains.Annotations.dll",
+        "xamarin.jetbrains.annotations.13.0.0.3.nupkg.sha512",
+        "xamarin.jetbrains.annotations.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib/1.4.20": {
+      "sha512": "pWCb/dO0w7nVPsRmQHFwMOAnA8t9afPEsAflQcAs61XJu/TKNRxjcVjRCeqViQVAd/eKA90Bc4qvTCTMHBDYbw==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib/1.4.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid10.0/Xamarin.Kotlin.StdLib.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib.jar",
+        "lib/monoandroid10.0/Xamarin.Kotlin.StdLib.dll",
+        "xamarin.kotlin.stdlib.1.4.20.nupkg.sha512",
+        "xamarin.kotlin.stdlib.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib.Common/1.4.20": {
+      "sha512": "o5mv45X1z/LE6Bufm3Zr01TtSFC6z0KAqWwlG8yF2RumSg1a7lb1cNAWSOrE6DEV5uSa06aSq40f/2yMA29sAA==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib.common/1.4.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid10.0/Xamarin.Kotlin.StdLib.Common.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-common.jar",
+        "lib/monoandroid10.0/Xamarin.Kotlin.StdLib.Common.dll",
+        "xamarin.kotlin.stdlib.common.1.4.20.nupkg.sha512",
+        "xamarin.kotlin.stdlib.common.nuspec"
+      ]
+    },
     "PizzaApp/1.0.0": {
       "type": "project",
       "path": "../PizzaApp/PizzaApp.csproj",
@@ -2438,6 +2602,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
+      "DevExpress.XamarinForms.CollectionView >= 21.2.3",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
       "PizzaApp >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
@@ -2495,6 +2660,10 @@
     "frameworks": {
       "monoandroid11.0": {
         "dependencies": {
+          "DevExpress.XamarinForms.CollectionView": {
+            "target": "Package",
+            "version": "[21.2.3, )"
+          },
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
             "version": "[5.0.0, )"
