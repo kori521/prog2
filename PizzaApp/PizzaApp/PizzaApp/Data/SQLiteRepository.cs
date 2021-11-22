@@ -10,8 +10,8 @@ namespace PizzaApp.Data
     {
         Task Initialize();
         Task LoadTable();
-        Task DeleteAll(Foods foodTable);
+        Task DeleteAll();
         Task<List<Foods>> GetFoods();
-        Task AddOrUpdateCart(Foods foods);
+        Task<List<Orders>> GetOrders();
     }
 }

@@ -12,13 +12,14 @@ namespace PizzaApp.ViewModel
 {
     public class FoodViewModel : ViewModelBase
     {
-        private SQLiteRepository sqliteRepository;
-        ObservableCollection<Foods> _foods;
+        private ObservableCollection<Foods> _foods;
         public Foods food;
+        public Orders orders;
         public FoodViewModel()
         {
             InitCartCommand();
             InitOrderCommand();
+            orders = new Orders();
         }
 
         public ObservableCollection<Foods> FoodTable
@@ -40,30 +41,37 @@ namespace PizzaApp.ViewModel
                 OnPropertyChanged();
             }
         }
+        public Orders OrderItem
+        {
+            get => orders;
+            set
+            {
+                orders = value;
+                OnPropertyChanged();
+            }
+        }
 
         public async void NavigateToCartView(Foods value)
         {
             var cartView = Locator.Resolve<CartView>();
             var cartViewModel = cartView.BindingContext as CartViewModel;
-            cartViewModel.food = value;
-            //await sqliteRepository.AddOrUpdateCart(value);
-            
+            //cartViewModel.food = value;
+            orders.AddToOrders(value);
         }
         private void InitCartCommand()
         {
-            CartCommand = new Command(async () => NavigateToCartView(new Foods()));
+            CartCommand = new Command(async () => NavigateToCartView(FoodList));
         }
         public async void NavigateToOrderView(Foods value)
         {
             var cartView = Locator.Resolve<CartView>();
             var cartViewModel = cartView.BindingContext as CartViewModel;
-            cartViewModel.food = value;
-            //await sqliteRepository.AddOrUpdateCart(value);
+            orders.AddToOrders(value);
             await Navigation.PushAsync(cartView);
         }
         private void InitOrderCommand()
         {
-            OrderCommand = new Command(async () => NavigateToOrderView(new Foods()));
+            OrderCommand = new Command(async () => NavigateToOrderView(FoodList));
         }
         public ICommand CartCommand { get; set; }
         public ICommand OrderCommand { get; set; }

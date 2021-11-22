@@ -11,13 +11,13 @@ using Xamarin.Forms.Xaml;
 namespace PizzaApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class OrderView : ContentPage
+    public partial class ThankYouView : ContentPage
     {
-        public OrderView(OrderViewModel orderViewModel)
+        public ThankYouView(ThankYouViewModel thankYouViewModel)
         {
             InitializeComponent();
-            orderViewModel.Navigation = Navigation;
-            BindingContext = orderViewModel;
+            thankYouViewModel.Navigation = Navigation;
+            BindingContext = thankYouViewModel;
         }
     }
 }

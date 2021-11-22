@@ -11,7 +11,6 @@ namespace PizzaApp.Data
     public class SQLiteConnection : SQLiteRepository
     {
         private SQLiteAsyncConnection _connection;
-        private Cart cart;
         public async Task Initialize()
         {
             if (_connection != null) return;
@@ -19,7 +18,6 @@ namespace PizzaApp.Data
             try
             {
                 await _connection.CreateTableAsync<Foods>();
-                await _connection.CreateTableAsync<Cart>();
                 await _connection.CreateTableAsync<Orders>();
                 //var pizza = new Foods()
                 //{
@@ -48,30 +46,15 @@ namespace PizzaApp.Data
             //await _connection.InsertOrReplaceAsync(pizza);
         }
 
-        public async Task DeleteAll(Foods foodTable)
+        public async Task DeleteAll()
         {
-            _ = await _connection.DeleteAllAsync<Foods>();
+            _ = await _connection.DeleteAllAsync<Orders>();
         }
 
         public Task<List<Foods>> GetFoods() =>
             _connection.Table<Foods>().ToListAsync();
-
-        public async Task AddOrUpdateCart(Foods foods)
-        {
-            if(cart.name.Equals(foods.name))
-            {
-                cart.piece++;
-            }
-            else
-                _ = await _connection.InsertAsync(foods);
-        }
-                //_ = await _connection.UpdateAsync(cart);
-        public async Task OrderComplete()
-        {
-            var order = await _connection.Table<Cart>().ToListAsync();
-            _ = await _connection.QueryAsync<Orders>("INSERT INTO Orders SELECT * FROM Cart;");
-            _ = await _connection.DeleteAllAsync<Cart>();
-        }
+        public Task<List<Orders>> GetOrders() =>
+            _connection.Table<Orders>().ToListAsync();
 
     }
 }

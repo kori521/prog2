@@ -1,4 +1,5 @@
-﻿using PizzaApp.ViewModel;
+﻿using PizzaApp.Model;
+using PizzaApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace PizzaApp.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CartView : ContentPage
     {
+        public Orders orders = new Orders();
         public CartView(CartViewModel cartViewModel)
         {
             InitializeComponent();
