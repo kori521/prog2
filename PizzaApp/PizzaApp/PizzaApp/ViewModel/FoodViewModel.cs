@@ -12,8 +12,10 @@ namespace PizzaApp.ViewModel
 {
     public class FoodViewModel : ViewModelBase
     {
+        private readonly SQLiteRepository sQLiteRepository;
         private ObservableCollection<Foods> _foods;
         public Foods food;
+        private CartViewModel cart;
         public Orders orders;
         public FoodViewModel()
         {
@@ -55,7 +57,6 @@ namespace PizzaApp.ViewModel
         {
             var cartView = Locator.Resolve<CartView>();
             var cartViewModel = cartView.BindingContext as CartViewModel;
-            //cartViewModel.food = value;
             orders.AddToOrders(value);
         }
         private void InitCartCommand()
@@ -64,9 +65,11 @@ namespace PizzaApp.ViewModel
         }
         public async void NavigateToOrderView(Foods value)
         {
+            cart = new CartViewModel(sQLiteRepository);
             var cartView = Locator.Resolve<CartView>();
             var cartViewModel = cartView.BindingContext as CartViewModel;
             orders.AddToOrders(value);
+            cart.LoadOrder();
             await Navigation.PushAsync(cartView);
         }
         private void InitOrderCommand()

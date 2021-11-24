@@ -24,7 +24,7 @@ namespace PizzaApp.ViewModel
             InitOrderCommand();
             InitDeleteCommand();
         }
-        private async void LoadOrder()
+        public async void LoadOrder()
         {
             try
             {
@@ -57,8 +57,10 @@ namespace PizzaApp.ViewModel
         }
         public async void NavigateToCompleteView()
         {
+            ordercalc = new Orders();
             var completeView = Locator.Resolve<ThankYouView>();
             var completeViewModel = completeView.BindingContext as ThankYouViewModel;
+            ordercalc.SaveOrderToHistory();
             await Navigation.PushAsync(completeView);
         }
         public ObservableCollection<Orders> OrderItems

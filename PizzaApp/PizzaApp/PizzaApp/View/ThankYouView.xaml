@@ -4,9 +4,10 @@
              x:Class="PizzaApp.View.ThankYouView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Thank you for your order!" VerticalOptions="Center" HorizontalOptions="Center" Margin="10,200,10,10"
+                   FontSize="20" TextColor="Blue"/>
+            <Button Text="Continue" VerticalOptions="Center" HorizontalOptions="Center" Margin="10,10,10,10" BackgroundColor="Red"
+                    TextColor="White" Command="{Binding ContinueCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
