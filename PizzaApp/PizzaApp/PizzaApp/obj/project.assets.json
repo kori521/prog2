@@ -27,6 +27,20 @@
           "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll": {}
         }
       },
+      "DevExpress.XamarinForms.Editors/21.2.3": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.CollectionView": "[21.2.3]",
+          "DevExpress.XamarinForms.Core": "[21.2.3]",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Editors.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Editors.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -319,6 +333,24 @@
         "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.xml",
         "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll",
         "lib/netstandard2.0/DevExpress.XamarinForms.Core.xml"
+      ]
+    },
+    "DevExpress.XamarinForms.Editors/21.2.3": {
+      "sha512": "QhHs6bHalAWjDF0pzVyPjXuEoENxIPa5C1+erGhRxTtEufETYVuv3VXYBeZ9yLFJMJ6JjNC2tH8zDo63MjfJ1g==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.editors/21.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.editors.21.2.3.nupkg.sha512",
+        "devexpress.xamarinforms.editors.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.Editors.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.dll",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Editors.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Editors.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Editors.iOS.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Editors.dll"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
@@ -1050,6 +1082,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "DevExpress.XamarinForms.CollectionView >= 21.2.3",
+      "DevExpress.XamarinForms.Editors >= 21.2.3",
       "Microsoft.Extensions.DependencyInjection >= 5.0.2",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
       "NETStandard.Library >= 2.0.3",
@@ -1111,6 +1144,10 @@
         "targetAlias": "netstandard2.0",
         "dependencies": {
           "DevExpress.XamarinForms.CollectionView": {
+            "target": "Package",
+            "version": "[21.2.3, )"
+          },
+          "DevExpress.XamarinForms.Editors": {
             "target": "Package",
             "version": "[21.2.3, )"
           },

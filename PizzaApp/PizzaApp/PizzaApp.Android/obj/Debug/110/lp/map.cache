@@ -1,6 +1,8 @@
 DevExpress.Xamarin.Android.CollectionView.dll
+DevExpress.Xamarin.Android.Editors.dll
 DevExpress.XamarinForms.CollectionView.Android.dll
 DevExpress.XamarinForms.Core.Android.dll
+DevExpress.XamarinForms.Editors.Android.dll
 FormsViewGroup.dll
 SQLitePCLRaw.lib.e_sqlite3.android.dll
 Xamarin.AndroidX.Activity.dll
@@ -11,6 +13,7 @@ Xamarin.AndroidX.AppCompat.dll
 Xamarin.AndroidX.Arch.Core.Common.dll
 Xamarin.AndroidX.Arch.Core.Runtime.dll
 Xamarin.AndroidX.AsyncLayoutInflater.dll
+Xamarin.AndroidX.AutoFill.dll
 Xamarin.AndroidX.Browser.dll
 Xamarin.AndroidX.CardView.dll
 Xamarin.AndroidX.Collection.dll
@@ -92,3 +95,4 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
+androidx.autofill.autofill.aar

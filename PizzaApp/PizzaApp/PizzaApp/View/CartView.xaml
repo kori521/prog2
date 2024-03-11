@@ -4,8 +4,8 @@
              xmlns:dxcv="http://schemas.devexpress.com/xamarin/2014/forms/collectionview"
              x:Class="PizzaApp.View.CartView">
         <ContentPage.ToolbarItems>
-            <ToolbarItem Text="DeleteAll" IconImageSource="" Command="{Binding DeleteCommand}" />
-
+            <ToolbarItem Text="Delete All" Command="{Binding DeleteCommand}" />
+            <ToolbarItem Text="Refresh Cart" Command="{Binding RefreshCommand}" />
         </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid>

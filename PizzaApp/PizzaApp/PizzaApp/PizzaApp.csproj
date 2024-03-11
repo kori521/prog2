@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="DevExpress.XamarinForms.CollectionView" Version="21.2.3" />
+    <PackageReference Include="DevExpress.XamarinForms.Editors" Version="21.2.3" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
@@ -36,6 +37,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\OrderView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\ShippingView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\ThankYouView.xaml">

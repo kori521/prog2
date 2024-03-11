@@ -1,4 +1,5 @@
-﻿using PizzaApp.View;
+﻿using PizzaApp.Data;
+using PizzaApp.View;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,8 +10,10 @@ namespace PizzaApp.ViewModel
 {
     public class ThankYouViewModel : ViewModelBase
     {
-        public ThankYouViewModel()
+        private SQLiteRepository sqliterepo;
+        public ThankYouViewModel(SQLiteRepository sqliterepo)
         {
+            this.sqliterepo = sqliterepo;
             InitContinueCommand();
         }
         private void InitContinueCommand()
@@ -23,6 +26,7 @@ namespace PizzaApp.ViewModel
             var main = Application.Current.MainPage.Navigation;
             var homeView = Locator.Resolve<HomeView>();
             var homeViewModel = homeView.BindingContext as HomeViewModel;
+            await sqliterepo.DeleteAll();
             await main.PopToRootAsync();
         }
 

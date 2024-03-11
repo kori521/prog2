@@ -10,6 +10,7 @@
       "PizzaApp/1.0.0": {
         "dependencies": {
           "DevExpress.XamarinForms.CollectionView": "21.2.3",
+          "DevExpress.XamarinForms.Editors": "21.2.3",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "NETStandard.Library": "2.0.3",
@@ -39,6 +40,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll": {
+            "assemblyVersion": "21.2.3.0",
+            "fileVersion": "21.2.3.0"
+          }
+        }
+      },
+      "DevExpress.XamarinForms.Editors/21.2.3": {
+        "dependencies": {
+          "DevExpress.XamarinForms.CollectionView": "21.2.3",
+          "DevExpress.XamarinForms.Core": "21.2.3",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Editors.dll": {
             "assemblyVersion": "21.2.3.0",
             "fileVersion": "21.2.3.0"
           }
@@ -225,6 +239,13 @@
       "sha512": "sha512-Fp7M/TcDRVl9aEiB/bzi+FvokMKJ4cWq9xk/Ug5SKiXw628wMi4b7b0EK02fIlO1U86KKueP8liyjqxkilp/+Q==",
       "path": "devexpress.xamarinforms.core/21.2.3",
       "hashPath": "devexpress.xamarinforms.core.21.2.3.nupkg.sha512"
+    },
+    "DevExpress.XamarinForms.Editors/21.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QhHs6bHalAWjDF0pzVyPjXuEoENxIPa5C1+erGhRxTtEufETYVuv3VXYBeZ9yLFJMJ6JjNC2tH8zDo63MjfJ1g==",
+      "path": "devexpress.xamarinforms.editors/21.2.3",
+      "hashPath": "devexpress.xamarinforms.editors.21.2.3.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
       "type": "package",

@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[21.2.3, )"
             },
+            "DevExpress.XamarinForms.Editors": {
+              "target": "Package",
+              "version": "[21.2.3, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[5.0.2, )"

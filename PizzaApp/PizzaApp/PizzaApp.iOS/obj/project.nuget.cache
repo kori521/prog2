@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ihrGj8na7k0mkGmgnIbBnNTEfGqnHmcFK0wKcRwvKgjaZ+jaK6HThbpaprapcIBGqUUrIEKNbHsBck3WFjOpVA==",
+  "dgSpecHash": "yQQ0FhvqyB/RzdS80LJ7WvJwCdUEKT+fjJuJfC9DEgX/bOI9eEBcwEIqkvB0IzX+W2wRgwvKrctScL4IPDeBmw==",
   "success": true,
   "projectFilePath": "D:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp.iOS\\PizzaApp.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korne\\.nuget\\packages\\devexpress.xamarinforms.collectionview\\21.2.3\\devexpress.xamarinforms.collectionview.21.2.3.nupkg.sha512",
     "C:\\Users\\korne\\.nuget\\packages\\devexpress.xamarinforms.core\\21.2.3\\devexpress.xamarinforms.core.21.2.3.nupkg.sha512",
+    "C:\\Users\\korne\\.nuget\\packages\\devexpress.xamarinforms.editors\\21.2.3\\devexpress.xamarinforms.editors.21.2.3.nupkg.sha512",
     "C:\\Users\\korne\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\korne\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\korne\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",

@@ -69,7 +69,7 @@ namespace PizzaApp.ViewModel
         {
             var foodView = Locator.Resolve<FoodView>();
             var foodViewModel = foodView.BindingContext as FoodViewModel;
-            foodViewModel.food = value;
+            foodViewModel.FoodList = value;
             await Navigation.PushAsync(foodView);
         }
         public void RefreshCommand()

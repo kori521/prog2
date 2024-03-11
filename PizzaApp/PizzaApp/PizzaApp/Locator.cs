@@ -29,6 +29,8 @@ namespace PizzaApp
             services.AddTransient<CouponsView>();
             services.AddTransient<ThankYouView>();
             services.AddTransient<ThankYouViewModel>();
+            services.AddTransient<ShippingView>();
+            services.AddTransient<ShippingViewModel>();
             serviceProvider = services.BuildServiceProvider();
         }
         public static T Resolve<T>() => serviceProvider.GetService<T>();

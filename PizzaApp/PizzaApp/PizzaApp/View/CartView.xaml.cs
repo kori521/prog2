@@ -20,6 +20,12 @@ namespace PizzaApp.View
             InitializeComponent();
             cartViewModel.Navigation = Navigation;
             BindingContext = cartViewModel;
+            inittotal();
         }
+        public void inittotal()
+        {
+            totalprice.Text = Convert.ToString(orders.calc());
+        }
+
     }
 }

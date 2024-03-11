@@ -4,8 +4,9 @@
              x:Class="PizzaApp.View.HomeView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Pizza App" HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center" Margin="10"/>
-            <Grid Margin="10,30,10,10">
+            <Label Text="Pizza App" HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center" Margin="20"
+                   TextColor="Black" FontSize="24"/>
+            <Grid Margin="10,5,10,10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="200"/>
                     <RowDefinition Height="100"/>
@@ -14,10 +15,13 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Text="Pizzas" Command="{Binding PizzaCommand}" Grid.Row="0" Grid.Column="0" ImageSource=""/>
-                <Button Text="Cart" Grid.Row="0" Grid.Column="1" Margin="1,1,1,80" Command="{Binding CartCommand}"/>
-                <Button Text="Coupons" Grid.Row="1" Grid.Column="0" Margin="1,-10,1,-50" Command="{Binding CouponsCommand}"/>
-                <Button Text="Orders" Command="{Binding OrdersCommand}" Grid.Row="1" Grid.Column="1" Margin="1,-90,1,-50"/>
+                <Button Text="Pizzas" Command="{Binding PizzaCommand}" Grid.Row="0" Grid.Column="0" ImageSource="" Background="coral"
+                        FontSize="18" TextColor="White"/>
+                <Button Text="Cart" Grid.Row="0" Grid.Column="1" Margin="1,1,1,80" Command="{Binding CartCommand}" Background="green"
+                        Style="{StaticResource menu}"/>
+                <Button Text="Coupons" Grid.Row="1" Grid.Column="0" Margin="1,-10,1,-50" Command="{Binding CouponsCommand}"
+                        Background="Blue" Style="{StaticResource menu}"/>
+                <Button Text="Orders" Command="{Binding OrdersCommand}" Grid.Row="1" Grid.Column="1" Margin="1,-90,1,-50" Background="lightyellow"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

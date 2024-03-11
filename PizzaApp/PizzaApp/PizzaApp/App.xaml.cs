@@ -10,6 +10,7 @@ namespace PizzaApp
     {
         public App()
         {
+            DevExpress.XamarinForms.DataForm.Initializer.Init();
             InitializeComponent();
             Locator.Initialize();
             InitializeRepository();

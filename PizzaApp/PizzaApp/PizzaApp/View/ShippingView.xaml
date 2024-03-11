@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:dxe="clr-namespace:DevExpress.XamarinForms.Editors;assembly=DevExpress.XamarinForms.Editors"
+             xmlns:dxdf="http://schemas.devexpress.com/xamarin/2014/forms/dataform"
+             x:Class="PizzaApp.View.ShippingView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="WidthRequest" Value="110"/>
+                <Setter Property="MinimumWidthRequest" Value="110"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="Margin" Value="1,5,0,0"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="EditStyle" TargetType="dxe:TextEdit">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="1,5,5,0"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+            <Style x:Key="ComboStyle" TargetType="dxe:ComboBoxEdit">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="1,5,5,0"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <StackLayout>
+            <dxdf:DataFormView HeightRequest="200" x:Name="Form" 
+                       CommitMode="PropertyChanged" ValidationMode="LostFocus">
+
+            </dxdf:DataFormView>
+
+            <dxe:TextEdit PlaceholderText="Name" Text="Kornél" BorderColor="Gray" BorderThickness="2" Margin="80,20,20,20"/>
+            <Label Text="Név" Margin="10,-65,0,0" TextColor="Black" FontSize="18"/>
+            <Button Text="Befejezés" VerticalOptions="End" Margin="20" BackgroundColor="Red" FontSize="18" TextColor="White"
+                    CornerRadius="10" Command="{Binding ThankYouCommand}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

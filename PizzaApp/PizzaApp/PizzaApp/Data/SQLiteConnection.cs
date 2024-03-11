@@ -21,11 +21,28 @@ namespace PizzaApp.Data
                 await _connection.CreateTableAsync<Orders>();
                 //var pizza = new Foods()
                 //{
-                //    name = "Margarita",
-                //    price = 1200,
-                //    description = "paradicsomos alap, sajt"
+                //    name = "SONGOKU",
+                //    price = 1700,
+                //    description = "paradicsomos alap, sonka, gomba, kukorica"
                 //};
                 //await _connection.InsertAsync(pizza);
+                //var pizza1 = new Foods()
+                //{
+                //    name = "Hawaii",
+                //    price = 1500,
+                //    description = "paradicsomos alap, sonka, sajt, ananász"
+                //};
+                //await _connection.InsertAsync(pizza1);
+
+                //var pizza2 = new Foods()
+                //{
+                //    name = "New-York",
+                //    price = 1800,
+                //    description = "paradicsomos alap, mozzarella, szalámi, kukorica"
+                //};
+                //await _connection.InsertAsync(pizza2);
+            
+        
             }
             catch (Exception e)
             {

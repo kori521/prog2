@@ -4,6 +4,7 @@ using PizzaApp.View;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -67,10 +68,12 @@ namespace PizzaApp.ViewModel
         {
             cart = new CartViewModel(sQLiteRepository);
             var cartView = Locator.Resolve<CartView>();
+            var previousPage = Navigation.NavigationStack.LastOrDefault();
             var cartViewModel = cartView.BindingContext as CartViewModel;
             orders.AddToOrders(value);
             cart.LoadOrder();
             await Navigation.PushAsync(cartView);
+            Navigation.RemovePage(previousPage);
         }
         private void InitOrderCommand()
         {

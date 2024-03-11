@@ -17,12 +17,14 @@ namespace PizzaApp.ViewModel
         private ObservableCollection<Orders> order;
         public Orders ordercalc;
         public Foods food;
+        public int total = 0;
         public CartViewModel(SQLiteRepository sqliteRepository)
         {
             this.sqliteRepository = sqliteRepository;
             LoadOrder();
             InitOrderCommand();
             InitDeleteCommand();
+            InitRefreshCommand();
         }
         public async void LoadOrder()
         {
@@ -55,13 +57,12 @@ namespace PizzaApp.ViewModel
             foodViewModel.orders = value;
             await Navigation.PushAsync(foodView);
         }
-        public async void NavigateToCompleteView()
+        public async void NavigateToShippingView()
         {
-            ordercalc = new Orders();
-            var completeView = Locator.Resolve<ThankYouView>();
-            var completeViewModel = completeView.BindingContext as ThankYouViewModel;
-            ordercalc.SaveOrderToHistory();
-            await Navigation.PushAsync(completeView);
+            var shippingView = Locator.Resolve<ShippingView>();
+            var model = shippingView.BindingContext as ShippingViewModel;
+            shippingView.setContent();
+            await Navigation.PushAsync(shippingView);
         }
         public ObservableCollection<Orders> OrderItems
         {
@@ -84,13 +85,18 @@ namespace PizzaApp.ViewModel
         }
         private void InitOrderCommand()
         {
-            OrderCommand = new Command(async () => NavigateToCompleteView());
+            OrderCommand = new Command(async () => NavigateToShippingView());
         }
         private void InitDeleteCommand()
         {
             DeleteCommand = new Command(async () => await sqliteRepository.DeleteAll());
         }
+        private void InitRefreshCommand()
+        {
+            RefreshCommand = new Command(async () => LoadOrder());
+        }
         public ICommand OrderCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
+        public ICommand RefreshCommand { get; set; }
     }
 }
