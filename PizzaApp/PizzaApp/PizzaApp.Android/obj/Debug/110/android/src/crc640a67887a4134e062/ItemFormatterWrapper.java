@@ -20,8 +20,9 @@ public class ItemFormatterWrapper
 	public ItemFormatterWrapper ()
 	{
 		super ();
-		if (getClass () == ItemFormatterWrapper.class)
+		if (getClass () == ItemFormatterWrapper.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.ItemFormatterWrapper, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

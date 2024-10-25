@@ -20,8 +20,9 @@ public class AutoCompleteEdit_TextChangedListenerImplementor
 	public AutoCompleteEdit_TextChangedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == AutoCompleteEdit_TextChangedListenerImplementor.class)
+		if (getClass () == AutoCompleteEdit_TextChangedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.AutoCompleteEdit+ITextChangedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

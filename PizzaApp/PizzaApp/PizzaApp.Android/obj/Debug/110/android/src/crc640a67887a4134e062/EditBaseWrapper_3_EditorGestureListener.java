@@ -23,8 +23,9 @@ public class EditBaseWrapper_3_EditorGestureListener
 	public EditBaseWrapper_3_EditorGestureListener ()
 	{
 		super ();
-		if (getClass () == EditBaseWrapper_3_EditorGestureListener.class)
+		if (getClass () == EditBaseWrapper_3_EditorGestureListener.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.EditBaseWrapper`3+EditorGestureListener, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

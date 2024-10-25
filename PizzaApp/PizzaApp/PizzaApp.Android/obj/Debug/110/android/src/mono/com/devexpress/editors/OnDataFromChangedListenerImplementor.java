@@ -21,8 +21,9 @@ public class OnDataFromChangedListenerImplementor
 	public OnDataFromChangedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == OnDataFromChangedListenerImplementor.class)
+		if (getClass () == OnDataFromChangedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.IOnDataFromChangedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

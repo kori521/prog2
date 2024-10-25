@@ -20,8 +20,9 @@ public class ItemsViewAdapterListenerImplementor
 	public ItemsViewAdapterListenerImplementor ()
 	{
 		super ();
-		if (getClass () == ItemsViewAdapterListenerImplementor.class)
+		if (getClass () == ItemsViewAdapterListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Com.Devexpress.Dxlistview.Core.IItemsViewAdapterListenerImplementor, DevExpress.Xamarin.Android.CollectionView", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

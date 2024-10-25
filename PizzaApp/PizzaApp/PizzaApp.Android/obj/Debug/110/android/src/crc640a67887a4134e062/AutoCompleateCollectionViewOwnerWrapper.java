@@ -18,8 +18,9 @@ public class AutoCompleateCollectionViewOwnerWrapper
 	public AutoCompleateCollectionViewOwnerWrapper ()
 	{
 		super ();
-		if (getClass () == AutoCompleateCollectionViewOwnerWrapper.class)
+		if (getClass () == AutoCompleateCollectionViewOwnerWrapper.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.AutoCompleateCollectionViewOwnerWrapper, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

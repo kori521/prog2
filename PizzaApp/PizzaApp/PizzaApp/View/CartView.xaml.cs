@@ -24,7 +24,7 @@ namespace PizzaApp.View
         }
         public void inittotal()
         {
-            totalprice.Text = Convert.ToString(orders.calc());
+            //totalprice.Text = Convert.ToString(orders.calc());
         }
 
     }

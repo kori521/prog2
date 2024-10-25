@@ -30,7 +30,7 @@
                             <BoxView Color="#FAFEFE" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="3"
                                          Margin="3" CornerRadius="8"/>
                             <ImageButton Grid.Row="0" Grid.Column="0" Grid.RowSpan="4"  WidthRequest="85" HeightRequest="85"
-                                       HorizontalOptions="Start" VerticalOptions="Center" Aspect="AspectFit" Source="{Binding thumb}"
+                                       HorizontalOptions="Start" VerticalOptions="Center" Aspect="AspectFit" Source="pizza"
                                        x:Name="thumb" Margin="3,3,3,3" BackgroundColor="White" />
                             <Label Text="{Binding name}" Grid.Column="1" Grid.RowSpan="2" Padding="2,2,0,0" Grid.ColumnSpan="2"
                                        TextColor="Black" MaxLines="2" FontAttributes="Bold" FontSize="22"

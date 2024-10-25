@@ -20,8 +20,9 @@ public class OnClickListener
 	public OnClickListener ()
 	{
 		super ();
-		if (getClass () == OnClickListener.class)
+		if (getClass () == OnClickListener.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.OnClickListener, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

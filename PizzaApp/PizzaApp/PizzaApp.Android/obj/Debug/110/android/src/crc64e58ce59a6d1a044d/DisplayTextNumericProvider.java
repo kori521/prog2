@@ -18,8 +18,9 @@ public class DisplayTextNumericProvider
 	public DisplayTextNumericProvider ()
 	{
 		super ();
-		if (getClass () == DisplayTextNumericProvider.class)
+		if (getClass () == DisplayTextNumericProvider.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.DisplayTextNumericProvider, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

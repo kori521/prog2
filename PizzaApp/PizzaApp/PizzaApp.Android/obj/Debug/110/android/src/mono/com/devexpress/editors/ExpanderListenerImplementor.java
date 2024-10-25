@@ -21,8 +21,9 @@ public class ExpanderListenerImplementor
 	public ExpanderListenerImplementor ()
 	{
 		super ();
-		if (getClass () == ExpanderListenerImplementor.class)
+		if (getClass () == ExpanderListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.IExpanderListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

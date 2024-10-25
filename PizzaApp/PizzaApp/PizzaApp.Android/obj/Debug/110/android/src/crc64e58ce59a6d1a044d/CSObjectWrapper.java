@@ -18,8 +18,9 @@ public class CSObjectWrapper
 	public CSObjectWrapper ()
 	{
 		super ();
-		if (getClass () == CSObjectWrapper.class)
+		if (getClass () == CSObjectWrapper.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.CSObjectWrapper, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

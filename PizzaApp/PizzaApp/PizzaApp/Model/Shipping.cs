@@ -20,6 +20,5 @@ namespace PizzaApp.Model
         public string City { get; set; }
         public int ZIP { get; set; }
         public string Address { get; set; }
-        public int HouseNumber { get; set; }
     }
 }

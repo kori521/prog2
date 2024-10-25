@@ -19,8 +19,9 @@ public class TemplatedItemSourceAdapter
 	public TemplatedItemSourceAdapter (android.content.Context p0)
 	{
 		super (p0);
-		if (getClass () == TemplatedItemSourceAdapter.class)
+		if (getClass () == TemplatedItemSourceAdapter.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.TemplatedItemSourceAdapter, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 

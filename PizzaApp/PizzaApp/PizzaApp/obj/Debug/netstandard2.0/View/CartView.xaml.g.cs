@@ -20,13 +20,9 @@ namespace PizzaApp.View {
         private global::DevExpress.XamarinForms.CollectionView.DXCollectionView Collection;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label totalprice;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CartView));
             Collection = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.CollectionView.DXCollectionView>(this, "Collection");
-            totalprice = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "totalprice");
         }
     }
 }

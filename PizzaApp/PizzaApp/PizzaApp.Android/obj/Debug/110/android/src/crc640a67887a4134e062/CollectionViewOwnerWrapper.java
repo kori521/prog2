@@ -25,8 +25,9 @@ public class CollectionViewOwnerWrapper
 	public CollectionViewOwnerWrapper ()
 	{
 		super ();
-		if (getClass () == CollectionViewOwnerWrapper.class)
+		if (getClass () == CollectionViewOwnerWrapper.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.CollectionViewOwnerWrapper, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

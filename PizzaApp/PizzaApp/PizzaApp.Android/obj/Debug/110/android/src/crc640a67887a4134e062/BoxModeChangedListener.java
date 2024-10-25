@@ -19,8 +19,9 @@ public class BoxModeChangedListener
 	public BoxModeChangedListener ()
 	{
 		super ();
-		if (getClass () == BoxModeChangedListener.class)
+		if (getClass () == BoxModeChangedListener.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.BoxModeChangedListener, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

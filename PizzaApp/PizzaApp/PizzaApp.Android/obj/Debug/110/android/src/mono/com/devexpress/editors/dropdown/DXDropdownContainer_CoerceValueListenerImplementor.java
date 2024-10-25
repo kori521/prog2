@@ -20,8 +20,9 @@ public class DXDropdownContainer_CoerceValueListenerImplementor
 	public DXDropdownContainer_CoerceValueListenerImplementor ()
 	{
 		super ();
-		if (getClass () == DXDropdownContainer_CoerceValueListenerImplementor.class)
+		if (getClass () == DXDropdownContainer_CoerceValueListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Dropdown.DXDropdownContainer+ICoerceValueListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

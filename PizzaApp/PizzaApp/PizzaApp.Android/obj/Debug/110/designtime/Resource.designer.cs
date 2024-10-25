@@ -14,7 +14,7 @@ namespace PizzaApp.Droid
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.1.0.5")]
 	public partial class Resource
 	{
 		
@@ -19603,16 +19603,19 @@ namespace PizzaApp.Droid
 			public const int notify_panel_notification_icon_bg = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int test_custom_background = 2131165368;
+			public const int pizza = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int tooltip_frame_dark = 2131165369;
+			public const int test_custom_background = 2131165369;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int tooltip_frame_light = 2131165370;
+			public const int tooltip_frame_dark = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int watermark = 2131165371;
+			public const int tooltip_frame_light = 2131165371;
+			
+			// aapt resource value: 0x7F0700BC
+			public const int watermark = 2131165372;
 			
 			static Drawable()
 			{

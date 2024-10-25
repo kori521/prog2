@@ -22,8 +22,9 @@ public class DateEdit_DateChangedListenerImplementor
 	public DateEdit_DateChangedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == DateEdit_DateChangedListenerImplementor.class)
+		if (getClass () == DateEdit_DateChangedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.DateEdit+IDateChangedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

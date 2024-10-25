@@ -18,24 +18,27 @@ public class SimpleButtonRenderer
 	public SimpleButtonRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
 	{
 		super (p0, p1, p2);
-		if (getClass () == SimpleButtonRenderer.class)
+		if (getClass () == SimpleButtonRenderer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.SimpleButtonRenderer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
+		}
 	}
 
 
 	public SimpleButtonRenderer (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
-		if (getClass () == SimpleButtonRenderer.class)
+		if (getClass () == SimpleButtonRenderer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.SimpleButtonRenderer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android", this, new java.lang.Object[] { p0, p1 });
+		}
 	}
 
 
 	public SimpleButtonRenderer (android.content.Context p0)
 	{
 		super (p0);
-		if (getClass () == SimpleButtonRenderer.class)
+		if (getClass () == SimpleButtonRenderer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.SimpleButtonRenderer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 	private java.util.ArrayList refList;

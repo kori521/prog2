@@ -34,8 +34,9 @@ public class DataFormDataProvider
 	public DataFormDataProvider ()
 	{
 		super ();
-		if (getClass () == DataFormDataProvider.class)
+		if (getClass () == DataFormDataProvider.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.DataForm.DataFormDataProvider, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

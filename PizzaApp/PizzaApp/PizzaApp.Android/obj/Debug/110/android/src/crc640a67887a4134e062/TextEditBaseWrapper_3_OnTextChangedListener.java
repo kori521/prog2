@@ -20,8 +20,9 @@ public class TextEditBaseWrapper_3_OnTextChangedListener
 	public TextEditBaseWrapper_3_OnTextChangedListener ()
 	{
 		super ();
-		if (getClass () == TextEditBaseWrapper_3_OnTextChangedListener.class)
+		if (getClass () == TextEditBaseWrapper_3_OnTextChangedListener.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.TextEditBaseWrapper`3+OnTextChangedListener, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

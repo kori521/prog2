@@ -27,8 +27,9 @@ public class ListViewListenerImplementor
 	public ListViewListenerImplementor ()
 	{
 		super ();
-		if (getClass () == ListViewListenerImplementor.class)
+		if (getClass () == ListViewListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Com.Devexpress.Dxlistview.IListViewListenerImplementor, DevExpress.Xamarin.Android.CollectionView", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

@@ -19,8 +19,9 @@ public class IconClickedListener
 	public IconClickedListener ()
 	{
 		super ();
-		if (getClass () == IconClickedListener.class)
+		if (getClass () == IconClickedListener.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.IconClickedListener, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

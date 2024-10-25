@@ -20,32 +20,36 @@ public class PopupContentRendererContainer
 	public PopupContentRendererContainer (android.content.Context p0)
 	{
 		super (p0);
-		if (getClass () == PopupContentRendererContainer.class)
+		if (getClass () == PopupContentRendererContainer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Popup.Android.PopupContentRendererContainer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 
 	public PopupContentRendererContainer (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
-		if (getClass () == PopupContentRendererContainer.class)
+		if (getClass () == PopupContentRendererContainer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Popup.Android.PopupContentRendererContainer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android", this, new java.lang.Object[] { p0, p1 });
+		}
 	}
 
 
 	public PopupContentRendererContainer (android.content.Context p0, android.util.AttributeSet p1, int p2)
 	{
 		super (p0, p1, p2);
-		if (getClass () == PopupContentRendererContainer.class)
+		if (getClass () == PopupContentRendererContainer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Popup.Android.PopupContentRendererContainer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
+		}
 	}
 
 
 	public PopupContentRendererContainer (android.content.Context p0, android.util.AttributeSet p1, int p2, int p3)
 	{
 		super (p0, p1, p2, p3);
-		if (getClass () == PopupContentRendererContainer.class)
+		if (getClass () == PopupContentRendererContainer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Popup.Android.PopupContentRendererContainer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2, p3 });
+		}
 	}
 
 

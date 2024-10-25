@@ -20,8 +20,9 @@ public class SwipeViewDelegate
 	public SwipeViewDelegate ()
 	{
 		super ();
-		if (getClass () == SwipeViewDelegate.class)
+		if (getClass () == SwipeViewDelegate.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.CollectionView.Android.SwipeViewDelegate, DevExpress.XamarinForms.CollectionView.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

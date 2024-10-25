@@ -20,15 +20,17 @@ public class ItemSourceAdapter_ItemsSourceFilter
 	public ItemSourceAdapter_ItemsSourceFilter ()
 	{
 		super ();
-		if (getClass () == ItemSourceAdapter_ItemsSourceFilter.class)
+		if (getClass () == ItemSourceAdapter_ItemsSourceFilter.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.ItemSourceAdapter+ItemsSourceFilter, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	public ItemSourceAdapter_ItemsSourceFilter (crc64e58ce59a6d1a044d.ItemSourceAdapter p0)
 	{
 		super ();
-		if (getClass () == ItemSourceAdapter_ItemsSourceFilter.class)
+		if (getClass () == ItemSourceAdapter_ItemsSourceFilter.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.ItemSourceAdapter+ItemsSourceFilter, DevExpress.XamarinForms.Editors.Android", "DevExpress.XamarinForms.Editors.Android.ItemSourceAdapter, DevExpress.XamarinForms.Editors.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 

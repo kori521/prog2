@@ -26,8 +26,9 @@ public class ItemSourceAdapter
 	public ItemSourceAdapter (android.content.Context p0)
 	{
 		super (p0);
-		if (getClass () == ItemSourceAdapter.class)
+		if (getClass () == ItemSourceAdapter.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.ItemSourceAdapter, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 

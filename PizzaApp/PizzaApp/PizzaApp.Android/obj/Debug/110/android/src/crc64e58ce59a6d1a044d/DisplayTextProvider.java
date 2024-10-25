@@ -20,8 +20,9 @@ public class DisplayTextProvider
 	public DisplayTextProvider ()
 	{
 		super ();
-		if (getClass () == DisplayTextProvider.class)
+		if (getClass () == DisplayTextProvider.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.DisplayTextProvider, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

@@ -18,8 +18,9 @@ public class ThreadUtilsService
 	public ThreadUtilsService ()
 	{
 		super ();
-		if (getClass () == ThreadUtilsService.class)
+		if (getClass () == ThreadUtilsService.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Core.Android.Utils.ThreadUtilsService, DevExpress.XamarinForms.Core.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

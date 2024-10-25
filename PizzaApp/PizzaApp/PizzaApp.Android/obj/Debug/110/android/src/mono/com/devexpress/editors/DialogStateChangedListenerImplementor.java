@@ -20,8 +20,9 @@ public class DialogStateChangedListenerImplementor
 	public DialogStateChangedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == DialogStateChangedListenerImplementor.class)
+		if (getClass () == DialogStateChangedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.IDialogStateChangedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

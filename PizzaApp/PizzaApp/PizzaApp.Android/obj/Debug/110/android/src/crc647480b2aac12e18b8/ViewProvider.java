@@ -32,8 +32,9 @@ public class ViewProvider
 	public ViewProvider ()
 	{
 		super ();
-		if (getClass () == ViewProvider.class)
+		if (getClass () == ViewProvider.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.CollectionView.Android.ViewProvider, DevExpress.XamarinForms.CollectionView.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

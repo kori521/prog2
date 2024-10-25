@@ -22,8 +22,9 @@ public class NumericEdit_UpDownClickListenerImplementor
 	public NumericEdit_UpDownClickListenerImplementor ()
 	{
 		super ();
-		if (getClass () == NumericEdit_UpDownClickListenerImplementor.class)
+		if (getClass () == NumericEdit_UpDownClickListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.NumericEdit+IUpDownClickListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

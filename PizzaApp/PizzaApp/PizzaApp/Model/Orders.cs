@@ -16,6 +16,7 @@ namespace PizzaApp.Model
         [PrimaryKey, AutoIncrement]
         public int id { get; set; }
         public int pid { get; set; }
+        public int sid { get; set; }
         public string name { get; set; }
         public string description { get; set; }
         public double price { get; set; }
@@ -37,7 +38,7 @@ namespace PizzaApp.Model
             {
                 total += totallist[i];
             }
-            finaltotal = total;
+            total = total + price;
             db.Insert(this);
         }
         public double calc()

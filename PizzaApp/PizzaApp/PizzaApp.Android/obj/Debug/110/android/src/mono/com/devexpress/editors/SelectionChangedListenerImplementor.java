@@ -20,8 +20,9 @@ public class SelectionChangedListenerImplementor
 	public SelectionChangedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == SelectionChangedListenerImplementor.class)
+		if (getClass () == SelectionChangedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.ISelectionChangedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

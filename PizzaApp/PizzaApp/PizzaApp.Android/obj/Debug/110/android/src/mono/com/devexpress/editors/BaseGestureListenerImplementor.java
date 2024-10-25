@@ -22,8 +22,9 @@ public class BaseGestureListenerImplementor
 	public BaseGestureListenerImplementor ()
 	{
 		super ();
-		if (getClass () == BaseGestureListenerImplementor.class)
+		if (getClass () == BaseGestureListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.IBaseGestureListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

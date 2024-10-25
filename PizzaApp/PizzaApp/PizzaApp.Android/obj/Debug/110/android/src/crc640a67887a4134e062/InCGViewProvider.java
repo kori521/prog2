@@ -18,8 +18,9 @@ public class InCGViewProvider
 	public InCGViewProvider ()
 	{
 		super ();
-		if (getClass () == InCGViewProvider.class)
+		if (getClass () == InCGViewProvider.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.InCGViewProvider, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

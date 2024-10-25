@@ -24,8 +24,9 @@ public class GestureInteractionListenerImplementor
 	public GestureInteractionListenerImplementor ()
 	{
 		super ();
-		if (getClass () == GestureInteractionListenerImplementor.class)
+		if (getClass () == GestureInteractionListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Com.Devexpress.Dxlistview.Core.IGestureInteractionListenerImplementor, DevExpress.Xamarin.Android.CollectionView", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

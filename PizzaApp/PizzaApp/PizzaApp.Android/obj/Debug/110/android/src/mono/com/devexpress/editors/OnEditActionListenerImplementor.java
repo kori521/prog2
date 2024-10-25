@@ -20,8 +20,9 @@ public class OnEditActionListenerImplementor
 	public OnEditActionListenerImplementor ()
 	{
 		super ();
-		if (getClass () == OnEditActionListenerImplementor.class)
+		if (getClass () == OnEditActionListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.IOnEditActionListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

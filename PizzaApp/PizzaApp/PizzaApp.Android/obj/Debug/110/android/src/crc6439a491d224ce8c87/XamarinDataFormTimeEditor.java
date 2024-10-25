@@ -18,24 +18,27 @@ public class XamarinDataFormTimeEditor
 	public XamarinDataFormTimeEditor (android.view.View p0)
 	{
 		super (p0);
-		if (getClass () == XamarinDataFormTimeEditor.class)
+		if (getClass () == XamarinDataFormTimeEditor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.DataForm.Editors.XamarinDataFormTimeEditor, DevExpress.XamarinForms.Editors.Android", "Android.Views.View, Mono.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 
 	public XamarinDataFormTimeEditor (android.view.View p0, boolean p1)
 	{
 		super (p0, p1);
-		if (getClass () == XamarinDataFormTimeEditor.class)
+		if (getClass () == XamarinDataFormTimeEditor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.DataForm.Editors.XamarinDataFormTimeEditor, DevExpress.XamarinForms.Editors.Android", "Android.Views.View, Mono.Android:System.Boolean, mscorlib", this, new java.lang.Object[] { p0, p1 });
+		}
 	}
 
 
 	public XamarinDataFormTimeEditor (android.view.View p0, boolean p1, com.devexpress.editors.dataForm.protocols.DXDataFormEditorItemErrorProvider p2)
 	{
 		super (p0, p1, p2);
-		if (getClass () == XamarinDataFormTimeEditor.class)
+		if (getClass () == XamarinDataFormTimeEditor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.DataForm.Editors.XamarinDataFormTimeEditor, DevExpress.XamarinForms.Editors.Android", "Android.Views.View, Mono.Android:System.Boolean, mscorlib:Com.Devexpress.Editors.DataForm.Protocols.DXDataFormEditorItemErrorProvider, DevExpress.Xamarin.Android.Editors", this, new java.lang.Object[] { p0, p1, p2 });
+		}
 	}
 
 	private java.util.ArrayList refList;

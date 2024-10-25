@@ -20,8 +20,9 @@ public class ExpanderHeaderClickListenerImplementor
 	public ExpanderHeaderClickListenerImplementor ()
 	{
 		super ();
-		if (getClass () == ExpanderHeaderClickListenerImplementor.class)
+		if (getClass () == ExpanderHeaderClickListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Com.Devexpress.Editors.DataForm.IExpanderHeaderClickListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

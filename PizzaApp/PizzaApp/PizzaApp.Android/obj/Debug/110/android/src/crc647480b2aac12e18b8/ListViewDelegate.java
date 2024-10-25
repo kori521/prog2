@@ -27,8 +27,9 @@ public class ListViewDelegate
 	public ListViewDelegate ()
 	{
 		super ();
-		if (getClass () == ListViewDelegate.class)
+		if (getClass () == ListViewDelegate.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.CollectionView.Android.ListViewDelegate, DevExpress.XamarinForms.CollectionView.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

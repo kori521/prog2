@@ -20,8 +20,9 @@ public class OnTextChangedListenerImplementor
 	public OnTextChangedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == OnTextChangedListenerImplementor.class)
+		if (getClass () == OnTextChangedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.IOnTextChangedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

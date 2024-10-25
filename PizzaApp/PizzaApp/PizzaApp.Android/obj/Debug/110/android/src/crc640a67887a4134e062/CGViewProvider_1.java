@@ -25,8 +25,9 @@ public class CGViewProvider_1
 	public CGViewProvider_1 ()
 	{
 		super ();
-		if (getClass () == CGViewProvider_1.class)
+		if (getClass () == CGViewProvider_1.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.CGViewProvider`1, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

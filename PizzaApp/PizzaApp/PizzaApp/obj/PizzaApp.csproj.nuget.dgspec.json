@@ -1,38 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "D:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\PizzaApp.csproj": {}
+    "F:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\PizzaApp.csproj": {}
   },
   "projects": {
-    "D:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\PizzaApp.csproj": {
+    "F:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\PizzaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\PizzaApp.csproj",
+        "projectUniqueName": "F:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\PizzaApp.csproj",
         "projectName": "PizzaApp",
-        "projectPath": "D:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\PizzaApp.csproj",
-        "packagesPath": "C:\\Users\\korne\\.nuget\\packages\\",
-        "outputPath": "D:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\obj\\",
+        "projectPath": "F:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\PizzaApp.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\prog2\\PizzaApp\\PizzaApp\\PizzaApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\devexpress\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\korne\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.1.config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\devexpress\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/6sriDMEP49eVGapPiV1IUIY3tVdOurPKxxDsDJfFGN3uNSoHKa/api": {}
+          "https://nuget.devexpress.com/6sriDMEP49eVGapPiV1IUIY3tVdOurPKxxDsDJfFGN3uNSoHKa/api/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -91,11 +87,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -20,8 +20,9 @@ public class AutoCompleteEdit_QuerySubmittedListenerImplementor
 	public AutoCompleteEdit_QuerySubmittedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == AutoCompleteEdit_QuerySubmittedListenerImplementor.class)
+		if (getClass () == AutoCompleteEdit_QuerySubmittedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.AutoCompleteEdit+IQuerySubmittedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

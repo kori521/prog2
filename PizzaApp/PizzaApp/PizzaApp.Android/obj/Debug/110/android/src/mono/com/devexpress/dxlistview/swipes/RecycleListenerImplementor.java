@@ -20,8 +20,9 @@ public class RecycleListenerImplementor
 	public RecycleListenerImplementor ()
 	{
 		super ();
-		if (getClass () == RecycleListenerImplementor.class)
+		if (getClass () == RecycleListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Com.Devexpress.Dxlistview.Swipes.IRecycleListenerImplementor, DevExpress.Xamarin.Android.CollectionView", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

@@ -20,8 +20,9 @@ public class TimeFormatter
 	public TimeFormatter ()
 	{
 		super ();
-		if (getClass () == TimeFormatter.class)
+		if (getClass () == TimeFormatter.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.TimeFormatter, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

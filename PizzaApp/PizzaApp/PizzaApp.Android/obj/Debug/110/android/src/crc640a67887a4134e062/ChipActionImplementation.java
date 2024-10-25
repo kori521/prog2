@@ -26,8 +26,9 @@ public class ChipActionImplementation
 	public ChipActionImplementation ()
 	{
 		super ();
-		if (getClass () == ChipActionImplementation.class)
+		if (getClass () == ChipActionImplementation.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.ChipActionImplementation, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

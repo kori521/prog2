@@ -18,24 +18,27 @@ public class MultilineEditRenderer
 	public MultilineEditRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
 	{
 		super (p0, p1, p2);
-		if (getClass () == MultilineEditRenderer.class)
+		if (getClass () == MultilineEditRenderer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.MultilineEditRenderer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
+		}
 	}
 
 
 	public MultilineEditRenderer (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
-		if (getClass () == MultilineEditRenderer.class)
+		if (getClass () == MultilineEditRenderer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.MultilineEditRenderer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android", this, new java.lang.Object[] { p0, p1 });
+		}
 	}
 
 
 	public MultilineEditRenderer (android.content.Context p0)
 	{
 		super (p0);
-		if (getClass () == MultilineEditRenderer.class)
+		if (getClass () == MultilineEditRenderer.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.MultilineEditRenderer, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 	private java.util.ArrayList refList;

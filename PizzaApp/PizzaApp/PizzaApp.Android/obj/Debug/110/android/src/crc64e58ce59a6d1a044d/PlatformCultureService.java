@@ -18,8 +18,9 @@ public class PlatformCultureService
 	public PlatformCultureService ()
 	{
 		super ();
-		if (getClass () == PlatformCultureService.class)
+		if (getClass () == PlatformCultureService.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.PlatformCultureService, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

@@ -20,8 +20,9 @@ public class CheckEditListenerImplementation
 	public CheckEditListenerImplementation ()
 	{
 		super ();
-		if (getClass () == CheckEditListenerImplementation.class)
+		if (getClass () == CheckEditListenerImplementation.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.CheckEditListenerImplementation, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

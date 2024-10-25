@@ -20,8 +20,9 @@ public class DateFormatter
 	public DateFormatter ()
 	{
 		super ();
-		if (getClass () == DateFormatter.class)
+		if (getClass () == DateFormatter.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.DateFormatter, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

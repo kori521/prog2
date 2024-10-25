@@ -19,8 +19,9 @@ public class XamarinEditorsCreator
 	public XamarinEditorsCreator ()
 	{
 		super ();
-		if (getClass () == XamarinEditorsCreator.class)
+		if (getClass () == XamarinEditorsCreator.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.DataForm.XamarinEditorsCreator, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

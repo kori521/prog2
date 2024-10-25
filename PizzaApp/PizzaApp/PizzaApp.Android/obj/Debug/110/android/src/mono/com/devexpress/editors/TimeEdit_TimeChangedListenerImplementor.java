@@ -20,8 +20,9 @@ public class TimeEdit_TimeChangedListenerImplementor
 	public TimeEdit_TimeChangedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == TimeEdit_TimeChangedListenerImplementor.class)
+		if (getClass () == TimeEdit_TimeChangedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.TimeEdit+ITimeChangedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

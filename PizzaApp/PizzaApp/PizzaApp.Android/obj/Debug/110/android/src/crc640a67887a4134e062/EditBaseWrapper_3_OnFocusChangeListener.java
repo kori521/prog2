@@ -20,8 +20,9 @@ public class EditBaseWrapper_3_OnFocusChangeListener
 	public EditBaseWrapper_3_OnFocusChangeListener ()
 	{
 		super ();
-		if (getClass () == EditBaseWrapper_3_OnFocusChangeListener.class)
+		if (getClass () == EditBaseWrapper_3_OnFocusChangeListener.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.EditBaseWrapper`3+OnFocusChangeListener, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

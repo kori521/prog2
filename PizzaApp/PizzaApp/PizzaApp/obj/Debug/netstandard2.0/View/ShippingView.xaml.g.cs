@@ -20,9 +20,13 @@ namespace PizzaApp.View {
         private global::DevExpress.XamarinForms.DataForm.DataFormView Form;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::DevExpress.XamarinForms.Editors.TextEdit phoneBox;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ShippingView));
             Form = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.DataForm.DataFormView>(this, "Form");
+            phoneBox = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.Editors.TextEdit>(this, "phoneBox");
         }
     }
 }

@@ -20,8 +20,9 @@ public class AutoCompleteEdit_SuggestionChosenListenerImplementor
 	public AutoCompleteEdit_SuggestionChosenListenerImplementor ()
 	{
 		super ();
-		if (getClass () == AutoCompleteEdit_SuggestionChosenListenerImplementor.class)
+		if (getClass () == AutoCompleteEdit_SuggestionChosenListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.AutoCompleteEdit+ISuggestionChosenListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

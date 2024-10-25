@@ -15,45 +15,48 @@
             </Grid.RowDefinitions>
             <AbsoluteLayout>
                 <Label Text="Cart" FontSize="20" Margin="180,20,10,10" Grid.Row="0" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold"/>
-            <dxcv:DXCollectionView ItemsSource="{Binding OrderItems}" SelectionMode="Single"
-                            SelectedItem="{Binding SelectedProduct, Mode=OneWayToSource}" Grid.Row="1" x:Name="Collection" 
+                <dxcv:DXCollectionView ItemsSource="{Binding OrderItems}" SelectionMode="None"
+                            Grid.Row="1" x:Name="Collection" 
                             IndicatorColor="Azure" Margin="1,70,1,1" BackgroundColor="Transparent">
-                <dxcv:DXCollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="7,10,7,1" Padding="2">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="25"/>
-                                <RowDefinition Height="25"/>
-                                <RowDefinition Height="20"/>
-                                <RowDefinition Height="20"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="85"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <BoxView Color="#0090C6" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="3" CornerRadius="8" />
-                            <BoxView Color="#FAFEFE" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="3"
+                    <dxcv:DXCollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="7,10,7,1" Padding="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="85"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <BoxView Color="#0090C6" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="3" CornerRadius="8" />
+                                <BoxView Color="#FAFEFE" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="3"
                                          Margin="3" CornerRadius="8"/>
-                            <ImageButton Grid.Row="0" Grid.Column="0" Grid.RowSpan="4"  WidthRequest="85" HeightRequest="85"
-                                       HorizontalOptions="Start" VerticalOptions="Center" Aspect="AspectFit" Source="{Binding thumb}"
+                                <ImageButton Grid.Row="0" Grid.Column="0" Grid.RowSpan="4"  WidthRequest="85" HeightRequest="85"
+                                       HorizontalOptions="Start" VerticalOptions="Center" Aspect="AspectFit" Source="pizza"
                                        x:Name="thumb" Margin="3,3,3,3" BackgroundColor="White" />
-                            <Label Text="{Binding name}" Grid.Column="1" Grid.RowSpan="2" Padding="2,2,0,0" Grid.ColumnSpan="2"
+                                <Label Text="{Binding name}" Grid.Column="1" Grid.RowSpan="2" Padding="2,2,0,0" Grid.ColumnSpan="2"
                                        TextColor="Black" MaxLines="2" FontAttributes="Bold" FontSize="22"
                                        FontFamily="Aller" HorizontalTextAlignment="Center" HorizontalOptions="StartAndExpand"/>
-                            <Label Text="{Binding description}" Padding="0,2,0,0" TextColor="Black"
+                                <Button Text="X" Grid.Column="1" Grid.RowSpan="2" Padding="2,2,0,0" Grid.ColumnSpan="2"
+                                       TextColor="Red" FontAttributes="Bold" FontSize="12" BackgroundColor="Transparent"
+                                        HorizontalOptions="StartAndExpand" Margin="200,20,0,20"/>
+                                <Label Text="{Binding description}" Padding="0,2,0,0" TextColor="Black"
                                        Grid.Column="2" Grid.Row="2" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
-                            <Label Text="{Binding price, StringFormat='{0} ft'}" Padding="0,2,0,0" TextColor="Red"
+                                <Label Text="{Binding price, StringFormat='{0} ft'}" Padding="0,-4,0,0" TextColor="Red"
                                        Grid.Column="1" Grid.Row="3" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
-                        </Grid>
-                    </DataTemplate>
-                </dxcv:DXCollectionView.ItemTemplate>
-                <dxcv:DXCollectionView.SortDescriptions>
-                    <dxcv:SortDescription FieldName="megnev" SortOrder="{Binding Sort}"/>
-                </dxcv:DXCollectionView.SortDescriptions>
-            </dxcv:DXCollectionView>
-        </AbsoluteLayout>
-            <Label Text="{Binding OrderItems.total, StringFormat='{0} Ft'}" x:Name="totalprice" Grid.Row="1" HorizontalOptions="Center" Margin="5" TextColor="Red" FontSize="17"/>
+                            </Grid>
+                        </DataTemplate>
+                    </dxcv:DXCollectionView.ItemTemplate>
+                    <dxcv:DXCollectionView.SortDescriptions>
+                        <dxcv:SortDescription FieldName="megnev" SortOrder="{Binding Sort}"/>
+                    </dxcv:DXCollectionView.SortDescriptions>
+                </dxcv:DXCollectionView>
+            </AbsoluteLayout>
+            <Label Text="{Binding Order.total, StringFormat='{0} Ft'}" Grid.Row="1" HorizontalOptions="Center" Margin="5" TextColor="Red" FontSize="17"/>
             <Button Text="Rendelés" Grid.Row="1" Margin="10,30,10,30" BackgroundColor="Red" TextColor="White" CornerRadius="15" FontSize="16" Command="{Binding OrderCommand}"
                     VerticalOptions="End"/>
         </Grid>

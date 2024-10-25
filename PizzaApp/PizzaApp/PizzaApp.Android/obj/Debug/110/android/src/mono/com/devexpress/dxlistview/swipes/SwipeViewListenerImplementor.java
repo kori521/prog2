@@ -20,8 +20,9 @@ public class SwipeViewListenerImplementor
 	public SwipeViewListenerImplementor ()
 	{
 		super ();
-		if (getClass () == SwipeViewListenerImplementor.class)
+		if (getClass () == SwipeViewListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Com.Devexpress.Dxlistview.Swipes.ISwipeViewListenerImplementor, DevExpress.Xamarin.Android.CollectionView", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

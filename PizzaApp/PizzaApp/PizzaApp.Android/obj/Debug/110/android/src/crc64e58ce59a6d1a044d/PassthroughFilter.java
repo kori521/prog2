@@ -20,15 +20,17 @@ public class PassthroughFilter
 	public PassthroughFilter ()
 	{
 		super ();
-		if (getClass () == PassthroughFilter.class)
+		if (getClass () == PassthroughFilter.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.PassthroughFilter, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	public PassthroughFilter (crc64e58ce59a6d1a044d.AutoCompleteItemsSourceAdapter p0)
 	{
 		super ();
-		if (getClass () == PassthroughFilter.class)
+		if (getClass () == PassthroughFilter.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.PassthroughFilter, DevExpress.XamarinForms.Editors.Android", "DevExpress.XamarinForms.Editors.Android.AutoCompleteItemsSourceAdapter, DevExpress.XamarinForms.Editors.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 

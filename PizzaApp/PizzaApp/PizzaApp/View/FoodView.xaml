@@ -17,7 +17,7 @@
             </Grid.ColumnDefinitions>
             <!--HEADER BACKGROUND -->
             <Frame Grid.Row="0" Grid.ColumnSpan="2" HeightRequest="200">
-                <Image Source=""/>
+                <Image Source="pizza" Scale="1.2"/>
             </Frame>
            <Label Text="{Binding FoodList.name}" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" TextColor="Black"
                                HorizontalTextAlignment="Center" Margin="50,20,50,0" FontSize="20" FontAttributes="Bold" VerticalOptions="Start"/>

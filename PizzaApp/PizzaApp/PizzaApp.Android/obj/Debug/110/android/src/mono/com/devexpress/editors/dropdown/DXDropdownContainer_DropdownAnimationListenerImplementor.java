@@ -23,8 +23,9 @@ public class DXDropdownContainer_DropdownAnimationListenerImplementor
 	public DXDropdownContainer_DropdownAnimationListenerImplementor ()
 	{
 		super ();
-		if (getClass () == DXDropdownContainer_DropdownAnimationListenerImplementor.class)
+		if (getClass () == DXDropdownContainer_DropdownAnimationListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Dropdown.DXDropdownContainer+IDropdownAnimationListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

@@ -26,8 +26,9 @@ public class AutoCompleteItemsSourceAdapter
 	public AutoCompleteItemsSourceAdapter (android.content.Context p0)
 	{
 		super (p0);
-		if (getClass () == AutoCompleteItemsSourceAdapter.class)
+		if (getClass () == AutoCompleteItemsSourceAdapter.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Android.AutoCompleteItemsSourceAdapter, DevExpress.XamarinForms.Editors.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 

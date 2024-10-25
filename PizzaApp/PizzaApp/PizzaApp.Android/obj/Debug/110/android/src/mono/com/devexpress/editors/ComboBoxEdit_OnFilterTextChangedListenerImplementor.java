@@ -20,8 +20,9 @@ public class ComboBoxEdit_OnFilterTextChangedListenerImplementor
 	public ComboBoxEdit_OnFilterTextChangedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == ComboBoxEdit_OnFilterTextChangedListenerImplementor.class)
+		if (getClass () == ComboBoxEdit_OnFilterTextChangedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.ComboBoxEdit+IOnFilterTextChangedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

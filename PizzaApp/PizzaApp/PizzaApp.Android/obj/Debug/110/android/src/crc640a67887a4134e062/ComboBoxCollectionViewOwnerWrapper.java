@@ -18,8 +18,9 @@ public class ComboBoxCollectionViewOwnerWrapper
 	public ComboBoxCollectionViewOwnerWrapper ()
 	{
 		super ();
-		if (getClass () == ComboBoxCollectionViewOwnerWrapper.class)
+		if (getClass () == ComboBoxCollectionViewOwnerWrapper.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.ComboBoxCollectionViewOwnerWrapper, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

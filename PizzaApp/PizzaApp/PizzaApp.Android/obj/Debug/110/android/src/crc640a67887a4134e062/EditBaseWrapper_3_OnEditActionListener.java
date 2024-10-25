@@ -20,8 +20,9 @@ public class EditBaseWrapper_3_OnEditActionListener
 	public EditBaseWrapper_3_OnEditActionListener ()
 	{
 		super ();
-		if (getClass () == EditBaseWrapper_3_OnEditActionListener.class)
+		if (getClass () == EditBaseWrapper_3_OnEditActionListener.class) {
 			mono.android.TypeManager.Activate ("DevExpress.XamarinForms.Editors.Wrappers.EditBaseWrapper`3+OnEditActionListener, DevExpress.XamarinForms.Editors.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

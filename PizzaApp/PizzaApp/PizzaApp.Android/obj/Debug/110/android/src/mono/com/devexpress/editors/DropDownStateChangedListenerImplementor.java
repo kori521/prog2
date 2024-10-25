@@ -20,8 +20,9 @@ public class DropDownStateChangedListenerImplementor
 	public DropDownStateChangedListenerImplementor ()
 	{
 		super ();
-		if (getClass () == DropDownStateChangedListenerImplementor.class)
+		if (getClass () == DropDownStateChangedListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("DevExpress.Xamarin.Android.Editors.IDropDownStateChangedListenerImplementor, DevExpress.Xamarin.Android.Editors", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 
